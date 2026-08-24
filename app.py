@@ -2,8 +2,8 @@ import streamlit as st
 import joblib
 
 # 1. Muat model dan vectorizer (yang sudah disimpan sebelumnya)
-model = joblib.load('logistic_regression_model.pkl')
-vectorizer = joblib.load('tfidf_vectorizer.pkl')
+model = joblib.load('models/logistic_regression_model.pkl')
+vectorizer = joblib.load('models/tfidf_vectorizer.pkl')
 
 # 2. Buat Antarmuka Web
 st.title("🎬 Analisis Sentimen Ulasan Film")
